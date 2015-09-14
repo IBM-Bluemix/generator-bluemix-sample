@@ -1,6 +1,6 @@
 {
   "name": "generator-bluemix-sample",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Yeoman generator",
   "private": false,
   "main": "app/index.js",
