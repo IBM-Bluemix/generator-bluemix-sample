@@ -165,7 +165,7 @@ var BluemixSampleGenerator = yeoman.generators.Base.extend({
     projectfiles: function () {
       this.copy('.editorconfig', '.editorconfig');
       this.copy('.cfignore', '.cfignore');
-      this.copy('.gitignore', '.gitignore');
+      this.copy('gitignore', '.gitignore');
 
       if (this.projectLicense === "apache")
         this.copy('Apache2License.txt', 'License.txt');

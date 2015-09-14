@@ -31,7 +31,7 @@ yo bluemix-sample
 
 ## Inputs
 
-The generator will ask you for several inputs while creating the scaffolding of your project they are as follows:
+The generator will ask you for several inputs while creating the scaffolding of your project. They are as follows:
 
 * **App Name** - The name you want to give your Bluemix app.
 * **Host Name** - The subdomain where your app can be reached. This value must be unique to the `mybluemix.net` domain.
