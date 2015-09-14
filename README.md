@@ -1,44 +1,52 @@
-# generator-blueman
+# Bluemix Sample App Generator
 
-## Getting Started
+> Yeoman generator for Bluemix sample application - lets you quickly set up a Cloud Foundry sample app with proper formatting and necessary files.
 
-### Overview
 
-> [Yeoman](http://yeoman.io) generator for a basic [Node.js](https://nodejs.org/) app with [Express.js](http://expressjs.com/) created for a [Bluemix](https://console.ng.bluemix.net/) environment. It uses the [Gulp.js](http://gulpjs.com/) task runner to serve the app with a few optimizations based on [this starter environment](http://github.com/una/gulp-starter-env). 
+## Usage
 
-To use Bluemix, you'll need to first sign up for an account [here](https://console.ng.bluemix.net/).
+Install the [Yeoman][yeoman_url] scaffolding tool `yo`:
 
-Make sure you have Node installed as well at the [Cloud Foundry CLI](https://github.com/cloudfoundry/cli).
-
-### Installation
-
-Then install Yeoman (our scaffolding tool):
-```bash
+```
 npm install -g yo
 ```
 
-To install generator-blueman from npm, run:
-
-```bash
-npm install -g generator-blueman
+Install the `generator-bluemix-sample` generator: 
+ 
+```
+npm install -g generator-bluemix-sample
 ```
 
-Finally, make the directory you want to create your app in, `cd` into it, and initiate the generator:
-
-```bash
-yo blueman
+Make a new director and `cd` into it: 
+ 
+```
+mkdir my-new-project && cd $_
 ```
 
-You now have a Bluemix-ready app!
+Run `yo bluemix sample` to initiate the generator:
 
-### Usage
+```
+yo bluemix-sample
+```
 
-Once the initial files are set up through Yeoman, run `gulp` to start the server and make edits. See [the starter environment](http://github.com/una/gulp-starter-env) repo for more documentation on editing files. 
+## Inputs
 
-### Deployment
+The generator will ask you for several inputs while creating the scaffolding of your project they are as follows:
 
-To deploy the app, use `gulp deploy`
+* **App Name** - The name you want to give your Bluemix app.
+* **Host Name** - The subdomain where your app can be reached. This value must be unique to the `mybluemix.net` domain.
+* **Memory** - The amount of memory to be allocated for a single instance of your app.
+* **Runtime** - Essentially, the language of your app.
+* **License** - The IBM supported licenses for open-sourcing your sample app.
+* **Type** - Each Bluemix sample app should fall into one of the four following types:
+	* Hello World
+	* Sample App
+	* Demo
+	* Reference Architecture App
 
 ## License
 
-MIT
+[Apache 2.0][apache_url]
+
+[yeoman_url]: http://yeoman.io
+[apache_url]: http://www.apache.org/licenses/LICENSE-2.0
