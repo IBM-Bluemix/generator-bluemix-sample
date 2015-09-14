@@ -150,13 +150,13 @@ var BluemixSampleGenerator = yeoman.generators.Base.extend({
       this.template('_manifest.yml', 'manifest.yml');
 
       if (this.projectType === "hello_world")
-        this.template('README_HelloWorld.md', 'README.md');
+        this.template('README-HelloWorld.md', 'README.md');
       else if (this.projectType === "sample_app")
-        this.template('README_SampleApp.md', 'README.md');
+        this.template('README-SampleApp.md', 'README.md');
       else if (this.projectType === "demo")
-        this.template('README_Demo.md', 'README.md');
+        this.template('README-Demo.md', 'README.md');
       else if (this.projectType === "reference_architecture")
-        this.template('README_Ref_Arch_App.md', 'README.md');
+        this.template('README-Ref_Arch_App.md', 'README.md');
 
       //files being copied over
       //this.copy('sample', 'sample');
