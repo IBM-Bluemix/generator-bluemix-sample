@@ -50,6 +50,9 @@ var BluemixSampleGenerator = yeoman.generators.Base.extend({
         }, {
             value: '128M',
             name: '128MB'
+        },{
+            value: '256M',
+            name: '256M'
         }, {
             value: '512M',
             name: '512MB'
